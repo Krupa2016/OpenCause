@@ -1,0 +1,829 @@
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Green Overlay */
+.green-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 38, 12, 0.4); /* Slight green overlay */
+  z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+  z-index: 1;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.start-project-btn {
+  background-color: #228b22;
+  color: white;
+}
+
+.start-project-btn:hover {
+  background-color: #006400;
+}
+
+.browse-projects-btn {
+  background-color: white;
+  color: #228b22;
+  border: 2px solid #228b22;
+}
+
+.browse-projects-btn:hover {
+  background-color: #228b22;
+  color: white;
+}
+
+
+
+
+
+
+
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1b1e1b00; /* Green theme */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+  color: #aaf0d1; /* Lighter green */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #aaf0d1; /* Lighter green */
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-btn {
+  background-color: white;
+  color: #228b22;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+  background-color: #aaf0d1;
+}
+
+/* Sign-In Button */
+.signin-btn {
+  background-color: white;
+  color: #228b22;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.signin-btn:hover {
+  background-color: #aaf0d1;
+  color: #006400;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* StartProject.css */
+/* Start Funding Page Container */
+.start-funding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image:  url("../src/assets/start-project.jpg");;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 78px;
+  
+
+}
+
+/* Form Container */
+.start-funding-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Form Title */
+.start-funding-form h2 {
+  text-align: center;
+  color: #228b22;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Label and Input Styling */
+.start-funding-form label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.start-funding-form input,
+.start-funding-form textarea,
+.start-funding-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.start-funding-form input:focus,
+.start-funding-form textarea:focus,
+.start-funding-form select:focus {
+  border-color: #228b22;
+  outline: none;
+}
+
+/* Reason for Fundraising */
+.start-funding-form .textarea-container {
+  margin-bottom: 30px;
+}
+
+.start-funding-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Image/Video Upload */
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.file-upload-container input[type="file"] {
+  border: none;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #228b22;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #006400;
+}
+
+
+
+
+
+.browse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin:80px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #228b22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-btn:hover {
+  background-color: #006400;
+}
+
+.category-btn.selected {
+  background-color: #006400;
+}
+
+.selected-categories {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.selected-categories ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected-categories li {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+
+/* 
+cards */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #f5f5f5;
+  padding: 18px;
+  margin:70px;
+  width: auto;
+}
+
+
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Left panel takes more space */
+  gap: 18px;
+  width: 90%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: start; /* Align items at the top of the container */
+}
+
+.left-panel {
+  grid-column: span 1;
+  /* margin-top: 25%; */
+  
+}
+
+.right-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.left-panel-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  height: auto; /* Specific height for left panel card */
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 370px;
+}
+
+.right-panel-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width:290px; 
+}
+
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-donations {
+  font-size: 14px;
+  color: rgb(118, 101, 101);
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4caf50;
+}
+
+
+.card-raised {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    flex: 1;
+    width: 100%;
+  }
+
+  .right-panel {
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+  background-color: #052d05f0;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #4caf50;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+
+/* info */
+/* Container for Info component */
+/* Main Container */
+.info-container {
+  display: flex;
+  justify-content: space-between; /* Align text content left and image right */
+  align-items: flex-start; /* Align content to the top */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 85px auto;
+}
+
+/* Text Content */
+.info-text-content {
+  width: 45%; /* Text content on the left side */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.info-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.info-button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.info-donate-button, .info-fundraiser-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.info-donate-button {
+  background-color: #ff4b5c;
+  color: white;
+}
+
+.info-donate-button:hover {
+  background-color: #e0464e;
+}
+
+.info-fundraiser-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.info-fundraiser-button:hover {
+  background-color: #45a049;
+}
+
+/* Image Container */
+.info-image-container {
+  width: 50%; /* Image takes up 50% */
+}
+
+.info-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Container */
+.info-chart-container {
+  width: 100%; /* Full width */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the chart */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: center; /* Center all content */
+  }
+
+  .info-image-container {
+    width: 80%; /* Larger image size on mobile */
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .info-text-content {
+    width: 80%; /* Text content also takes more space */
+    padding-right: 0; /* Remove padding */
+    text-align: center; /* Center text on small screens */
+  }
+
+  .info-chart-container {
+    width: 80%; /* Full width chart below image */
+  }
+}
+
+
+
+
+
+
+
+/* comment section */
+.comment-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.comment-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.comment-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  color: #888;
+}
+
+.comment-name {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.comment-text {
+  margin: 0;
+  color: #555;
+}
+
+.comment-input-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.comment-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  font-size: 14px;
+}
+
+.comment-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container h3 {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logout-btn,
+.signin-btn {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover,
+.signin-btn:hover {
+  background-color: #0056b3;
+}

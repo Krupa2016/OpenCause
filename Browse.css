@@ -1,0 +1,63 @@
+.browse-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-panelb, .right-panelb {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.left-panel-cardb, .right-panel-cardb {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-donations {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.progress-bar-container { /* Corrected: added the dot before 'progress-bar-container' */
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4caf50;
+}
+
+.card-raised {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}

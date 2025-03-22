@@ -1,0 +1,150 @@
+/* General container styling */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f7f9fc;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 85px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile card section */
+  .profile-card {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Main content section using flexbox */
+  .profile-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 65%;
+  }
+  
+  /* Top Donor Section */
+  .top-donor-section {
+    flex: 2;
+    max-width: calc(100% - 300px); /* Adjusting for left card width */
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 12px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-donor-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1565c0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .top-donor-title i {
+    margin-right: 10px;
+    font-size: 28px;
+    color: #ffca28;
+  }
+  
+  .badge {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Progress Section Styling */
+  .profile-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .donation-category,
+  .fund-category {
+    margin-bottom: 15px;
+  }
+  
+  .category-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar-containerp {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  
+  .progress-barp {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .progress-percentagep {
+    font-size: 12px;
+    text-align: right;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-containerp {
+      flex-direction: column;
+    }
+  
+    .profile-card,
+    .profile-section,
+    .top-donor-section {
+      max-width: 100%;
+      margin: 0 0 20px 0;
+    }
+  
+    .profile-content {
+      flex-direction: column;
+    }
+  }
+  
